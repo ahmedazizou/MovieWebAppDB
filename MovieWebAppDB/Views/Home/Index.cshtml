@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="row justify-content-md-start">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Wellcome
+            </div>
+            <div class="card-body">
+                @if (Session["FullName"] != null)
+                {
+                    <p>Name: @Session["FullName"].ToString()</p>
+                    <p>Email: @Session["Email"].ToString()</p>
+                    <a href="@Url.Action("Logout","Home")" class="btn btn-warning">Logout</a>
+                }
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="jumbotron">
+            <h1>Movie App</h1>
+            <h3 class="btn bg-danger"><a href="/Actors/Index">Actors Page </a></h3>
+            <h3 class="btn bg-danger"><a href="/Actor_Movie/Index"> Actor_Movie Page </a></h3>
+            <h3 class="btn bg-danger"><a href="/Cinemas/Index">Cinemas Page </a></h3>
+            <h3 class="btn bg-danger"><a href="/Movies/Index">Movies Page </a></h3>
+            <h3 class="btn bg-danger"><a href="/Producers/Index">Producers Page </a></h3>
+            
+            
+        </div>
+    </div>
+</div>
