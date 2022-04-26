@@ -19,10 +19,13 @@ Each movie title will provide detailed statistic on user ratings by age, gender 
  
 # Usage
  1. Open the folders as new project
- 2. Open Web config file and change connectionString to SQL server database
+ 2. Open Web config file and change connectionString to Your local SQL Server
  3. Open Package manager console 
  4. Update-Database
 
+# Database Schema
+
+![databasediagram](https://user-images.githubusercontent.com/68253091/165307253-027af470-c12d-47dd-bfa8-aea59c4fa7d7.png)
 
 
 # Built With
